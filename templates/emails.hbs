@@ -1,0 +1,11 @@
+<h1>Emails</h1>
+<hr>
+
+<ul>
+  {{#each email in model}}
+  <li>{{#link-to 'email' email}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+
+{{#link-to 'email' classNames="btn btn-primary"}}New Email{{/link-to}}
